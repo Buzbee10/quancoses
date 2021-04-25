@@ -11,44 +11,55 @@
 <body>
     <!-- 
 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element  List to all html elements -->
+Lists
+Anchor tags
+Images
+Comments
 
-    <!-- This div below was placed here to wrap all of section 3 into a group. -->
+-->
+
+
     <div>
         <header>Only HTML was used to create this page.</header>
         <h1>Section 3</h1>
-        
+
         <h2>HTML</h2>
-        <p>HTML stands for <i>HyperText Markup Language</i> and is used to build the structure of a document.</p> 
-        
+        <p>HTML stands for <i>HyperText Markup Language</i> and is used to build the structure of a document.</p>
+
         <h2>Elements</h2>
         <div>Elements are used in HTML to help separate, distinguish, categorize, etc. parts of a webpage.</div>
-        <div>Syntax for an element: <b>&lt;<i> element type </i>&gt;<i> stuff </i>&lt; /<i> element type &gt;</i></p></b> </div>
-        
+        <div>Syntax for an element: <b>&lt;<i> element type </i>&gt;<i> stuff </i>&lt; /<i> element type &gt;</i></p>
+                </b> </div>
+
         <h3>Examples of Elements</h3>
-       
-        <div><b>Paragraph Element</b> - This is a block level element, so it will space itselp with other elements.</div>
+
+        <div><b>Paragraph Element</b> - This is a block level element, so it will space itself with other elements.
+        </div>
         <span>&lt;p&gt; <i>your paragraph...</i> &lt;/p&gt;</b></span>
 
-        <div><b>Division Element</b> - Much like a paragraph element, this is a block-level element allowing for division of sections.</div>
+        <div><b>Division Element</b> - Much like a paragraph element, this is a block-level element allowing for
+            division of sections.</div>
         <span>&lt;div&gt; <i>your content...</i> &lt;/div&gt;</span>
 
-        <div><b>h1 through h6 Elements</b> - These are header elements. There can only be a single h1 on a page, and the numerical value must be in ascending order. e.g. h2 must come before an h3, and an h3 must come before an h4.</div>
+        <div><b>h1 through h6 Elements</b> - These are header elements. There can only be a single h1 on a page, and the
+            numerical value must be in ascending order. e.g. h2 must come before an h3, and an h3 must come before an
+            h4.</div>
         <span>&lt;h1&gt; <i>your main header</i> &lt;/h1&gt;</span>
         <div>&lt;h2&gt; <i>your subheader</i> &lt;/h2&gt;</div>
 
         <h2>HTML Boilerplate</h2>
         <p>This is standardized markup that needs to be in every html document.</p>
-       
+
         <h3>Boilerplate Parts</h3>
-       
+
         <div><b>Doctype</b> - This tells the broswer what type of document it is reading.</div>
         <span>&lt;!DOCTYPE html&gt;</span>
 
         <div><b>HTML Element</b> - This is the top-level element. Everything needs to go in here.</div>
         <span>&lt;html lang="en"&gt; <i>all your shit</i> &lt;/html&gt;</span>
 
-        <div><b>Title</b> - This is the title of the page which is displayed in the browser tab. Browsers use the title element to create the links in the search results.</div>
+        <div><b>Title</b> - This is the title of the page which is displayed in the browser tab. Browsers use the title
+            element to create the links in the search results.</div>
         <span>&lt;title&gt; <i>your title</i> &lt;/title&gt;</span>
 
         <div><b>Head</b> - This is where all the metadata wil go.</div>
@@ -57,7 +68,35 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element  List to all html elem
         <div><b>Body</b> - This is where all the content of the document will go.</div>
         <span>&lt;body&gt; <i>touch my body</i> &lt;/body&gt;</span>
 
+        <h2>Lists</h2>
+        <span>Lists can be nested inside one another (both ordered and unordered.)</span>
 
+        <h3>Unordered Lists</h3>
+        <span>These are lists of things where order is not necessarily needed. This is done by creating a tag named ul with tags named li nested within. </span>
+
+        <div>Syntax for unordered lists:</div>
+        <div><b>&lt;<i>ul</i>&gt;</b></div>
+        <span><b><i> &lt;<i>li</i>&gt; stuff &lt;<i>/li</i>&gt;..... </i></b></span>
+        <div><b>&lt; /<i>ul&gt;</i></p></b></div>
+
+        <h3>Ordered Lists</h3>
+        <span>These are lists where having an order is wanted. This is done by creating a tag named ol with tags named li nested within. </span>
+
+        <div>Syntax for ordered lists:</div>
+        <div><b>&lt;<i>ol</i>&gt;</b></div>
+        <span><b><i> &lt;<i>li</i>&gt; stuff &lt;<i>/li</i>&gt;..... </i></b></span>
+        <div><b>&lt; /<i>ol&gt;</i></p></b></div>
+
+        <h2>Anchor Tags</h2>
+        <span>Anchor tags are typically used for providing a clickable link for navigation to another location. This is done by opening an 'a' tag, having the address specified immedietely after the a, naming the clickable portion between the tags, followed by a closing tag. When adding the location in the href attribute, the link will take you to the location relative to the current directory, if not otherwise specified. So, if we are working in a local directory and you want the link to go to google, make sure to add the http://www.</span>
+        
+        <div>Syntax for an anchor tag: <b><i> &lt;<i>a href="location"</i>&gt; stuff &lt;<i>/a</i>&gt; </i></b></div>
+
+        <h2>Images</h2>
+        <span>There is only an opening tag for images. Much like the href attribute for an anchor tag, there is an attribute named src for images. Same with the anchor tag, the location of the image used is relative to the current html file being used. Another attribute may be used to help with accessibility, which is the  alt attribute. This can be placed right after the src attribute which allows for a text description of the image. This will only show if the image cannot load properly, or if someone is using a screen reader.</span>
+        <div><b>Syntax for Images: <i> &lt;<i>img src="img location"</i>&gt;</i></b></div>
+        <div><b>Syntax for Images with alt attribute: <i> &lt;<i>img src="img location" alt="description"</i>&gt;</i></b></div>
+        
 
     </div>
 </body>
