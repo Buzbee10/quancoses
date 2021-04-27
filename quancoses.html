@@ -29,8 +29,12 @@
         </div>
         <span>&lt;p&gt; <i>your paragraph...</i> &lt;/p&gt;</b></span>
 
-        <div><b>Division Element</b> - Much like a paragraph element, this is a block-level element allowing for division of sections. This is good for grouping things together. But if another type of block-level element exists, use that instead. A div should really only be used as a last resort.</div>
-        <div><b>Span Element</b> - Spans are inline elements. These can also be used for grouping things, such as individual words within a sentence. For example, when applying css to a nhtml document, adding spans within a paragraph can allow you to edit specific words in a sentence.</div>
+        <div><b>Division Element</b> - Much like a paragraph element, this is a block-level element allowing for
+            division of sections. This is good for grouping things together. But if another type of block-level element
+            exists, use that instead. A div should really only be used as a last resort.</div>
+        <div><b>Span Element</b> - Spans are inline elements. These can also be used for grouping things, such as
+            individual words within a sentence. For example, when applying css to a nhtml document, adding spans within
+            a paragraph can allow you to edit specific words in a sentence.</div>
         <span>&lt;div&gt; <i>your content...</i> &lt;/div&gt;</span>
 
         <div><b>h1 through h6 Elements</b> - These are header elements. There can only be a single h1 on a page, and the
@@ -104,30 +108,77 @@
 
     </div>
 
-    <!-- Inline elements
-    Block elements
-Inlin-block elements
-Divs/Spans
- -->
     <div id="sectionFour">
         <h1>Section 4</h1>
         <h2>Inline Elements</h2>
-        <p>Inline elements only take up the space that they need, so the extra space can be filled with something else. </p>
+        <p>Inline elements only take up the space that they need, so the extra space can be filled with something else.
+        </p>
         <p>Examples of inline elements: spans, images, anchor tags</p>
 
         <h2>Block Elements</h2>
-        <p>Block elements take up the entire line (block), so even if your content doesn't fill up the whole line, that extra space will still be reserved.</p>
+        <p>Block elements take up the entire line (block), so even if your content doesn't fill up the whole line, that
+            extra space will still be reserved.</p>
         <p>Examples of block elements: divs, paragraphs, h1, h2, ...</p>
         <p>More about block elements, inline elements, and inline-block elements will be covered in css.</p>
 
         <h2>List of Elements</h2>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Here</a> is a link to all of the elements listed on MDN.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Here</a> is a link to all of the elements
+            listed on MDN.</p>
 
         <h2>Entity Codes</h2>
-        <p>These are codes for specific characters that we cannot normally type in. They all start with an '&' and end with an ';'. These should also be used for <b>Reserved characters</b>. These are characters such as '&lt;' and '&amp;'. Since they have a specific purpose in html, just typing it in normally might result in some confusion/problems. <a href="https://dev.w3.org/html5/html-author/charref">Here</a> is a link to entity codes.</p>
+        <p>These are codes for specific characters that we cannot normally type in. They all start with an '&' and end
+            with an ';'. These should also be used for <b>Reserved characters</b>. These are characters such as '&lt;'
+            and '&amp;'. Since they have a specific purpose in html, just typing it in normally might result in some
+            confusion/problems. <a href="https://dev.w3.org/html5/html-author/charref">Here</a> is a link to entity
+            codes.</p>
 
         <h2>Semantic Markup (Meaningful Markup)</h2>
-        <p>When choosing a type of element, try to choose one that has the best meaning for its purpose. For example, the 'main' element functions exactly like the generic 'div' element, but it indicates that the content inside is the main. Main and div function exactly the same, but main helps explain to people reading the code that what goes inside that element is the main content. These content sectioning elements can be seen <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning">here</a>.</p>
+        <p>When choosing a type of element, try to choose one that has the best meaning for its purpose. For example,
+            the 'main' element functions exactly like the generic 'div' element, but it indicates that the content
+            inside is the main. Main and div function exactly the same, but main helps explain to people reading the
+            code that what goes inside that element is the main content. These content sectioning elements can be seen
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning">here</a>.
+        </p>
+
+
+    </div>
+    <div id="sectionFive">
+        <h1>Section Five</h1>
+        <h2>Tables</h2>
+        <div><b>Table Elements</b></div>
+        <ul>
+            <li>&lt;table&gt;: table element- everything just goes inside of this element</li>
+            <li>&lt;td&gt;: table data cell element- defines a cell within a table</li>
+            <li>&lt;tr&gt;: table row element- groups cells into a row</li>
+            <li>&lt;th&gt;: table header cell element- defines a cell as being a header</li>
+            <li>&lt;thead&gt;: table head element- groups rows into a head </li>
+            <li>&lt;tbody&gt;: table body element- groups rows that are in the body of the table</li>
+            <li>&lt;tfoot&gt;: table foot element- defines what rows are considered a footer</li>
+            <li>&lt;colgroup&gt;: colgroup element- defines a group of columns in a table</li>
+            <li>&lt;caption&gt;</li>
+            <li>&lt;col&gt;: col element- This is usually found within a colgroup element. Includes the attribute 'span'
+            </li>
+            <li>col span and row span can also just go inside of something like a td</li>
+        </ul>
+        <div>Honestly didn't feel like doing this section so I will just leave a link <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#table_content">here</a> to look at.
+        </div>
+        <h2>Forms</h2>
+        <div><b>Form elements</b></div>
+        <ul>
+            <li>&lt;form&gt;: form element- This is basically just a shell for the other form elements to go into. It
+                also specifies where the form data should be submitted using the 'action' attribute and how it is sent
+                with the 'method' attribute. These are just some of the attributes.
+                <ul>
+                    <li>Attributes in a form element</li>
+                </ul>
+            </li>
+        </ul>
+
+        I also didnt feel like doing this one so <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">here</a> is a link to form element
+        info. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#forms">Here</a> are other elements used
+        in conjunction with forms. If you cant find what you are looking for, take a look at the input element. It has many uses.
 
 
     </div>
