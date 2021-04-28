@@ -183,9 +183,55 @@
 
 
     </div>
-    <div id="sectionSix"></div>
+    <div id="sectionSix">
+        <h1>Section Six</h1>
+        <h2>CSS: Cascading Style Sheets</h2>
+        <p>Almost everything in CSS follows this basic pattern</p>
+        <span>selector {</span><br>
+        <span> &emsp; property: value;</span><br>
+        <span>}</span><br><br>
+        <div>It is uncommon, but you can put a style element in the html head section and run css from there. Not so
+            common, but you can do it. Stay away from doing inline styles (styling html using html)</div>
+        <div>Linking html to css</div><br>
+        <div>We link html to css using the link element as follows:</div><br>
+        <div>&lt;link rel="stylesheets" href="nameOfYourCss&gt;</div><br>
+        <div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Here</a> are all of the css properties
+            listed on MDN</div>
+
+        <h2>Colors</h2>
+        <div><b>Different syntax for colors</b></div>
+        <ul>
+            <li>Color Name</li>
+            <li>RGB</li>
+            <ul>
+                <li>Syntax: rgb(#, #, #)</li>
+                <li>Ranges from 0 to 255</li>
+            </ul>
+            <li>Hexadecimal</li>
+            <ul>
+                <li>Syntax example: #FFFC00</li>
+                <li>This works the same way as rgb but instead of going from 0 to 255, we go from 00 to FF. The first
+                    two slots are for red, 3rd and 4th are for green, and 5th and 6th are for blue.</li>
+            </ul>
+        </ul>
+        <h2 id="sectionSixExample">Example</h2>
+        <div id="sectionSixExample2">The word example above and this text can be an example of some common css
+            properties. Look at the css
+            document to see what I have done. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, iusto
+            excepturi possimus ducimus, id est laborum aperiam qui odio explicabo reprehenderit magni voluptatibus
+            nobis, voluptates iste veritatis neque numquam facilis.</div>
+    
+
+    <h2>Font Size</h2>
+    <div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">Here</a> is a link to font size on MDN</div>
+    <div>You can do font size with <b>absolute units</b> (most common = px) and <b>relative units</b> (most common = em and rem). Relative units are usually better to use, especially when making a responsive website.</div>
+
+    <h2>Font Family</h2>
+    <div>Font families are a little tricker because different browers might only have certain kinds of fonts. <a href="https://www.cssfontstack.com/">Here</a> is a website that shows the different fonts that various browsers use. A way to get around this is choosing multiple fonts so that if certain browers dont have your first choice, your second or third choice can be used. This is called a <b>font stack</b>. Along with doing that, it would be a good idea to choose a general font family such as sans-serif or monospaced. When choosing a general font family, the browser will just choose your font for you. Look at the link above to see what I mean.</div>
+
+    </div>
     <div id="sectionSeven">
-        <p>What up bitch</p>
+
     </div>
 
 </body>

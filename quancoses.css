@@ -2,3 +2,25 @@
     background-color: lightgray;
 }
 
+#sectionSix {
+    background-color: tan;
+}
+
+#sectionSixExample {
+    text-align: center;
+    background-color: wheat;
+    font-weight: 100;
+    text-decoration: underline teal;
+    line-height: 5;
+    font-size: 25px;
+    font-family: Monaco, 'Courier New', monospace;
+    letter-spacing: 1.25em;
+}
+
+#sectionSixExample2 {
+    color: rgb(121, 12, 210);
+    letter-spacing: 3px;
+    line-height: 2;
+    font-size: 2em;
+    text-align: right;
+}
