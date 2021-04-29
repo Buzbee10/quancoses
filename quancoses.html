@@ -220,17 +220,61 @@
             document to see what I have done. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, iusto
             excepturi possimus ducimus, id est laborum aperiam qui odio explicabo reprehenderit magni voluptatibus
             nobis, voluptates iste veritatis neque numquam facilis.</div>
-    
 
-    <h2>Font Size</h2>
-    <div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">Here</a> is a link to font size on MDN</div>
-    <div>You can do font size with <b>absolute units</b> (most common = px) and <b>relative units</b> (most common = em and rem). Relative units are usually better to use, especially when making a responsive website.</div>
 
-    <h2>Font Family</h2>
-    <div>Font families are a little tricker because different browers might only have certain kinds of fonts. <a href="https://www.cssfontstack.com/">Here</a> is a website that shows the different fonts that various browsers use. A way to get around this is choosing multiple fonts so that if certain browers dont have your first choice, your second or third choice can be used. This is called a <b>font stack</b>. Along with doing that, it would be a good idea to choose a general font family such as sans-serif or monospaced. When choosing a general font family, the browser will just choose your font for you. Look at the link above to see what I mean.</div>
+        <h2>Font Size</h2>
+        <div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">Here</a> is a link to font size on MDN
+        </div>
+        <div>You can do font size with <b>absolute units</b> (most common = px) and <b>relative units</b> (most common =
+            em and rem). Relative units are usually better to use, especially when making a responsive website.</div>
+
+        <h2>Font Family</h2>
+        <div>Font families are a little tricker because different browers might only have certain kinds of fonts. <a
+                href="https://www.cssfontstack.com/">Here</a> is a website that shows the different fonts that various
+            browsers use. A way to get around this is choosing multiple fonts so that if certain browers dont have your
+            first choice, your second or third choice can be used. This is called a <b>font stack</b>. Along with doing
+            that, it would be a good idea to choose a general font family such as sans-serif or monospaced. When
+            choosing a general font family, the browser will just choose your font for you. Look at the link above to
+            see what I mean.</div>
 
     </div>
     <div id="sectionSeven">
+        <h1>Section Seven</h1>
+        <h2>Types of Selectors</h2>
+        <ul>
+            <li>ID - an ID selector is used for styling a single thing. Each ID specific to only 1 thing.</li>
+            <ul>
+                <li>#ID name {<br>
+                    &emsp; property: value;<br>
+                }</li>
+            </ul>
+            <li>Class - a class selector is used for multiple things. We can put several things into a class and style them all a certain way.</li>
+            <ul>
+                <li>.class name {<br>
+                    &emsp; property: value;<br>
+                }</li>
+            </ul>
+            <li>Descendant - a descendant selector is used to style something that is inside soemthing else. So if we want to style all paragraphs inside of a div a certain way, we would type in 'div space' in place of 'thing thing' below.</li>
+            <ul>
+                <li>thing thing {<br>
+                    &emsp; property: value;<br>
+                }</li>
+            </ul>
+            <li>Adjacent - the adjacent selector is used for styling something that comes immedietely after something on the same level. One is not inside (nested) inside of another, but is adjacent to it. Typing in h1 + p in place of thing + thing below would style all paragraphs that are immedietely after h1s.</li>
+            <ul>
+                <li>thing + thing {<br>
+                    &emsp; property: value;<br>
+                }</li>
+            </ul>
+            <li>Direct-Descendant - this is a lot like the desdendant selector, but it only applys to a child one level down.</li>
+            <ul>
+                <li>thing > thing {<br>
+                    &emsp; property: value;<br>
+                }</li>
+            </ul>
+            <!-- Start back with the attribute selector video -->
+            </ul>
+        </ul>
 
     </div>
 
