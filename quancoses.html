@@ -246,35 +246,94 @@
             <ul>
                 <li>#ID name {<br>
                     &emsp; property: value;<br>
-                }</li>
+                    }</li>
             </ul>
-            <li>Class - a class selector is used for multiple things. We can put several things into a class and style them all a certain way.</li>
+            <li>Class - a class selector is used for multiple things. We can put several things into a class and style
+                them all a certain way.</li>
             <ul>
                 <li>.class name {<br>
                     &emsp; property: value;<br>
-                }</li>
+                    }</li>
             </ul>
-            <li>Descendant - a descendant selector is used to style something that is inside soemthing else. So if we want to style all paragraphs inside of a div a certain way, we would type in 'div space' in place of 'thing thing' below.</li>
+            <li>Descendant - a descendant selector is used to style something that is inside soemthing else. So if we
+                want to style all paragraphs inside of a div a certain way, we would type in 'div space' in place of
+                'thing thing' below.</li>
             <ul>
                 <li>thing thing {<br>
                     &emsp; property: value;<br>
-                }</li>
+                    }</li>
             </ul>
-            <li>Adjacent - the adjacent selector is used for styling something that comes immedietely after something on the same level. One is not inside (nested) inside of another, but is adjacent to it. Typing in h1 + p in place of thing + thing below would style all paragraphs that are immedietely after h1s.</li>
+            <li>Adjacent - the adjacent selector is used for styling something that comes immedietely after something on
+                the same level. One is not inside (nested) inside of another, but is adjacent to it. Typing in h1 + p in
+                place of thing + thing below would style all paragraphs that are immedietely after h1s.</li>
             <ul>
                 <li>thing + thing {<br>
                     &emsp; property: value;<br>
-                }</li>
+                    }</li>
             </ul>
-            <li>Direct-Descendant - this is a lot like the desdendant selector, but it only applys to a child one level down.</li>
+            <li>Direct-Descendant - this is a lot like the desdendant selector, but it only applys to a child one level
+                down.</li>
             <ul>
                 <li>thing > thing {<br>
                     &emsp; property: value;<br>
-                }</li>
+                    }</li>
             </ul>
-            <!-- Start back with the attribute selector video -->
+            <li>Attribute - this is a way to select things based off a specific attribute that they have. For example,
+                we might want to style all inputs that have type="text". So, we would put input in place of 'thing' and
+                type='text' in place of 'attribute below.</li>
+            <ul>
+                <li>thing[attribute] {<br>
+                    &emsp; property: value;<br>
+                    }</li>
             </ul>
         </ul>
+        <h2>Pseudo Classes</h2>
+        <div>These can be added to the end of a selector to modify an element during a specific state.</div>
+        <div>Some examples include: </div>
+        <ul>
+            <li>thing:hover</li>
+            <li>thing:first</li>
+            <li>thing:first-child</li>
+            <li>thing:active</li>
+            <li>thing:not()</li>
+            <li>thing:nth-child()</li>
+            <li>thing:nth-of-type()</li>
+        </ul>
+        <div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">Here</a> is a list of all the
+            pseudo classes</div>
+
+        <h2>Pseudo Elements</h2>
+        <div>These are like pseduo classes, but instead of styling the state of the element, it styles a specific part
+            of the element: such as the first letter or text area when selected (highlighted)</div>
+        <div>Some examples include:</div>
+        <ul>
+            <li>thing::first-letter</li>
+            <li>thing::first-line</li>
+            <li>thing::selection</li>
+        </ul>
+        <div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements">Here</a> is a list of all the
+            pseudo elements</div>
+
+        <h2>Why is it Called Cascade</h2>
+        <div>All this means is that the order we style things matters, assuming the same specificity. So if I made all
+            h2s blue on a css document but then further down the document changed all h2s again to blue, all h2s would
+            then be blue.</div>
+
+        <h2>specificity</h2>
+        <div>When multiple selectors are used to style soemthing, the more specific selector will win.</div>
+        <div>Inline Styles (dont use these) > ID > Class, Attribute, & Pseudo-class Selectors > Element & Pseudo-element
+            selectors</div>
+        <div>There is also an exception called '!important'. This just always wins, but it should be use sparingly or
+            never. To use !important, add it in as follows:</div><br>
+        <span>selector {</span><br>
+        <span> &emsp; property: value !important;</span><br>
+        <span>}</span><br>
+
+        <h2>Inheritence</h2>
+        <div>A nested element(child) will inherit the styles of its parent unless otherwise specified. Certain things like buttons dont inherit the styles of their parents (closest parent), so if you want to, you can add the keyword inherit into css. Shown below: </div><br>
+        <div><span>button {</span><br>
+            <span> &emsp; property: inherit;</span><br>
+            <span>}</span><br><br></div>
 
     </div>
 
