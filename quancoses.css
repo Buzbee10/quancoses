@@ -24,3 +24,47 @@
     font-size: 2em;
     text-align: right;
 }
+
+#sectionEight {
+    background-color: rgb(138,154,91);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+#emSection {
+    font-size: 25px;
+}
+
+#inlineExample {
+    padding: 50px;
+    background-color: rosybrown;
+    margin: 50px;
+    width: 500px;
+    height: 500px;
+    color: white;
+}
+
+#emExample {
+    font-size: 50px;
+    background-color: sandybrown;
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
+
+#emExample2 {
+    font-size: 2em;
+    background-color: seashell;
+    margin-left: 3em;
+    margin-right: 3em;
+
+}
+#emExample3 {
+    font-size: 25px;
+    background-color: aqua;
+    margin-left: 3em;
+    margin-right: 3em;
+
+}

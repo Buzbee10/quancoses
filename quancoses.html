@@ -240,6 +240,7 @@
     </div>
     <div id="sectionSeven">
         <h1>Section Seven</h1>
+
         <h2>Types of Selectors</h2>
         <ul>
             <li>ID - an ID selector is used for styling a single thing. Each ID specific to only 1 thing.</li>
@@ -319,7 +320,7 @@
             h2s blue on a css document but then further down the document changed all h2s again to blue, all h2s would
             then be blue.</div>
 
-        <h2>specificity</h2>
+        <h2>Specificity</h2>
         <div>When multiple selectors are used to style soemthing, the more specific selector will win.</div>
         <div>Inline Styles (dont use these) > ID > Class, Attribute, & Pseudo-class Selectors > Element & Pseudo-element
             selectors</div>
@@ -330,10 +331,113 @@
         <span>}</span><br>
 
         <h2>Inheritence</h2>
-        <div>A nested element(child) will inherit the styles of its parent unless otherwise specified. Certain things like buttons dont inherit the styles of their parents (closest parent), so if you want to, you can add the keyword inherit into css. Shown below: </div><br>
+        <div>A nested element(child) will inherit the styles of its parent unless otherwise specified. Certain things
+            like buttons dont inherit the styles of their parents (closest parent), so if you want to, you can add the
+            keyword inherit into css. Shown below: </div><br>
         <div><span>button {</span><br>
             <span> &emsp; property: inherit;</span><br>
-            <span>}</span><br><br></div>
+            <span>}</span><br><br>
+        </div>
+
+    </div>
+
+    <div id="sectionEight">
+
+        <h1>Section Eight</h1>
+        <h2>CSS Box Model</h2>
+        <h3>Box Model Components</h3>
+        <ul>
+            <li>Content Box: The actual stuff you are adding</li>
+            <li>Padding: The space between the content box and the border</li>
+            <li>Border: You know whata border is</li>
+            <li>Margin: Space between the boxes</li>
+        </ul>
+        <div>Everything in CSS is a box.</div>
+
+        <h2>Common Properties</h2>
+        <ul>
+            <li>Width & Height: Changes the width and height of the content box.</li>
+            <li>Border-Width: Controls thickness of border</li>
+            <li>Border-Color: Color of border..duh</li>
+            <li>Border-Style: Controls the line style - dashed, solid, etc.</li>
+            <li>Border: This is shorthand for doing all of the border styles in one property</li>
+            <li>Border-radius: Used to round the corners of an elements outer border edge. This is also a shorthand. You
+                can modify each corner if you'd like. <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius">Here</a> is a link</li>
+            <li>Box-sizing
+                <ul>
+                    <li> Box-sizing: content-box; - This is the default setting, which makes the width and height
+                        property modify the content box.</li>
+                    <li> Box-sizing: border-box; - This is an alternate setting that includes the padding and border
+                        when setting the width and height.</li>
+                </ul>
+            </li>
+            <li>Padding: Modifys the size of the padding. you can also change the amount of padding for each side. This
+                is also a shorthand, and you can change the amount of padding for each side with different syntax. You
+                can also use all the individual properites to do this. <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding">Here</a> be the link</li>
+            <li>Margin: Same thing as padding, but on the outside of the border. <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin">Link</a></li>
+        </ul>
+        <h2>Display Property</h2>
+        <div>The display property has a bunch of options to choose from, but we will focus mostly on <span
+                class="bold">inline</span>, <span class="bold">block</span>, and <span class="bold">inline-block</span>
+        </div>
+
+        <h3>Inline</h3>
+        <div>Width and height are ignored. Margin and padding push elements away horizontally, but not vertically.</div>
+        <h4>Example</h4>
+        <div>Look at how the padding/margin is ignored vertically, but is respected horizontally. Also, if you look at
+            the code, I made the width and height super big but they are also being ignored.</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quasi architecto rem laborum, tenetur
+            perferendis voluptatum ea quisquam non nulla libero dolore totam voluptas necessitatibus a ut. Sed, pariatur
+            repellendus!
+            Architecto eaque deserunt nulla officia suscipit, enim ratione cum tempora nesciunt asperiores mollitia.
+            Velit illo itaque repellat nesciunt eius? Dolore libero sunt perspiciatis aliquam a dolorum, voluptatum odit
+            fuga nulla!
+            Veritatis obcaecati ullam hic eligendi, illum culpa, id repudiandae quis possimus praesentium officiis saepe
+            recusandae dolorum quibusdam soluta reiciendis consequuntur in nisi. Similique officia incidunt atque
+            obcaecati nemo <span id="inlineExample">I eat neck grease</span> laboriosam libero!
+            Facere dolorem aut perspiciatis qui architecto doloribus sed vel error esse maiores, delectus deserunt alias
+            id rerum odit possimus voluptates accusantium expedita sapiente saepe odio. Accusamus deleniti eligendi
+            veritatis vel?
+            Repudiandae molestiae doloribus maxime tempore animi ducimus esse quos dolorum asperiores voluptatum! Porro
+            dignissimos, earum, placeat eos harum culpa vero ipsum ea exercitationem nemo necessitatibus enim temporibus
+            nulla vitae quidem!</p>
+
+        <h3>Block</h3>
+        <div>I didnt make an example because this one is more intuitive</div>
+        <div>Block elements break the flow of a document. Width, height, margin, and padding are all respected.</div>
+
+        <h3>Inline-Block</h3>
+        <div>This is basically the same as a block, but it doesnt take up all the dead dpace it doesn't use.</div>
+        <div>Behave like an inline element except width, height, margin, and padding are respected.</div>
+
+        <h2>CSS Units</h2>
+        <h3>Percentages</h3>
+        <div>Percentages are relative to some other value so it is taking a percentage from its parent or the element
+            itself. The height and width property for example take from the parent. Line-height takes from itself, so if
+            an element has a font-size of 40px and a line-height of 200%, the line height will be 80px.</div>
+
+        <h3>em</h3>
+        <div>ems are also a relative unit and for font size it is relative to their parent. For other properties, it is
+            relative to itself (see example below). So for font, 1em is the same as its parent and 2em is twice the size
+            of its parent. For things like magin/padding, it would be relative to the element itself. </div>
+        <h4>Example</h4>
+
+        <section id="emSection">
+            <div id="emExample">My name E G Jeff</div>
+            <div>This first one has a left and right margin of 1em</div>
+            <div id="emExample2">My name is Franklin</div>
+            <div>This second one has a left and right margin of 3em</div>
+            <div id="emExample3">My name is shlenck</div>
+            <div>This third example also has a left and right margin of 3em, but since the font is smaller the margin is
+                smaller</div>
+        </section><br>
+        <div>One thing to think about is nesting elements. If we make the fonts of everything in ems they will grow/shrink for each nested element.</div>
+
+        <h3>rem</h3>
+        <div>rems are relative to the root html elements font size, so if the root html font size is 20px, 1rem is 20px</div>
 
     </div>
 
