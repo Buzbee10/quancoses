@@ -26,7 +26,7 @@
 }
 
 #sectionEight {
-    background-color: rgb(138,154,91);
+    background-color: rgb(138, 154, 91);
 }
 
 .bold {
@@ -51,7 +51,6 @@
     background-color: sandybrown;
     margin-left: 1em;
     margin-right: 1em;
-
 }
 
 #emExample2 {
@@ -59,12 +58,48 @@
     background-color: seashell;
     margin-left: 3em;
     margin-right: 3em;
-
 }
+
 #emExample3 {
     font-size: 25px;
     background-color: aqua;
     margin-left: 3em;
     margin-right: 3em;
+}
 
+#transitionExample1 {
+    width: 270px;
+    background-color: aqua;
+    transition: background-color 2s;
+}
+
+#transitionExample1:hover {
+    background-color: orange;
+}
+
+#transitionExample2 {
+    width: 270px;
+    background-color: forestgreen;
+    transition: background-color 3s, margin-left 3s ease-in-out 0.5s;
+    /* property | duration, property | duration | timing-function | delay 
+    The first number is the duration and the second number is the delay*/
+}
+
+#transitionExample2:hover {
+    background-color: wheat;
+}
+
+#transitionSection:hover #transitionExample2 {
+    margin-left: 500px;
+}
+
+#transitionExample3 {
+    width: 270px;
+    background-color: forestgreen;
+    transition: background-color 3s, margin-left 3s ease-in-out 0.5s;
+}
+
+#transitionExample3:hover {
+    background-color: wheat;
+    margin-left: 500px;
 }

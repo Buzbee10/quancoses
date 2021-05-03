@@ -434,12 +434,77 @@
             <div>This third example also has a left and right margin of 3em, but since the font is smaller the margin is
                 smaller</div>
         </section><br>
-        <div>One thing to think about is nesting elements. If we make the fonts of everything in ems they will grow/shrink for each nested element.</div>
+        <div>One thing to think about is nesting elements. If we make the fonts of everything in ems they will
+            grow/shrink for each nested element.</div>
 
         <h3>rem</h3>
-        <div>rems are relative to the root html elements font size, so if the root html font size is 20px, 1rem is 20px</div>
+        <div>rems are relative to the root html elements font size, so if the root html font size is 20px, 1rem is 20px
+        </div>
 
     </div>
+
+    <div id="sectionNine"></div>
+    <h1>Section Nine</h1>
+    <h2>Alpha Channel</h2>
+    <div>The alpha channel can be added after rgb to affect the transparancy of a property. It goes from 0 to 1. So
+        instead of just rgb(#, #, #), it would look like <span class="bold">rgba(#, #, #, #).</span></div>
+
+    <h2>Opacity Property</h2>
+    <div>This is like the alpha channel, but instead of just applying to one specific property, it will govern the
+        entire element, including all of its descendants. Opacity also goes from 0 to 1.</div>
+
+    <h2>Position Property</h2>
+    <div>Just read <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">this</a>. It is actually a pretty
+        important one so actually read it. There is a lot of detailed info so I thought the website would explain it
+        better.</div>
+
+    <h2>Transition Property</h2>
+    <h3>The transtion property is shorthand for:</h3>
+    <ol>
+        <li>Transition-property: This is the property you want to edit.</li>
+        <li>Transition-duration: This is how long you want the transition to occur, from begining to end.</li>
+        <li>Transition-delay: This is how long you want the transition to wait until it starts.</li>
+        <li>Transition-timing-function: This is the "path" that the transition takes to get from beginning to end. Like
+            starting fast and slowing down at the end.</li>
+    </ol>
+
+    <h3>Examples</h3>
+    <div id="transitionExample1"> <span class="bold">Transition-property:</span> background-color <span
+            class="bold">Transition-duration:</span> 2s</div><br>
+
+    <section id="transitionSection">
+        <div id="transitionExample2"><span class="bold">Transition-property:</span> background-color & margin-left <br>
+            <span class="bold">Transition-duration:</span> 3s <br> <span class="bold">Transition-delay:</span> 0.5s <br>
+            <span class="bold">Transition-timing-function:</span> ease-in-out
+        </div>
+    </section><br>
+
+    <div id="transitionExample3"><span class="bold">Transition-property:</span> background-color & margin-left <br>
+        <span class="bold">Transition-duration:</span> 3s <br> <span class="bold">Transition-delay:</span> 0.5s <br>
+        <span class="bold">Transition-timing-function:</span> ease-in-out
+    </div><br>
+
+    <div>The second and third example are exactly the same, but I put the second one inside of a section to help with
+        the hovering effect. Test it out and you will see what I mean.</div>
+
+    <h2>Transform Property</h2>
+    <div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">Read</a></div>
+
+    <h2>Transform-origin Property</h2>
+    <div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin">Read</a></div>
+
+    <h2>Difference with the position property and the transform: translate property</h2>
+    <div>Check <a href="https://stackoverflow.com/questions/28091821/difference-between-transform-translate-and-positionrelative#:~:text=Basically%20translate%20relies%20on%20CSS3,property%20is%20a%20CSS2%20level.">this</a> out if you are interested.</div>
+
+    <h2>Background Property</h2>
+    <div><a href="https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/21917726#questions">Watch</a></div>
+
+    <h2>Google Fonts</h2>
+    <div>If we wanted to make sure someones machine will load our page with a specific font, we can add that font to our css using google fonts. This makes the webpage fetch the font from google and load it before the webpage opens, ensuring a homogenous font across all users.</div><br>
+    <div>To do this, we go <a href="https://fonts.google.com/">here</a>, then choose the fonts/weights that we want. Next we get the link from the site and paste it into the head. The website will also show you what to type into your css to access the font.</div>
+
+
+
 
 </body>
 
