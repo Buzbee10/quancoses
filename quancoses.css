@@ -103,3 +103,65 @@
     background-color: wheat;
     margin-left: 500px;
 }
+#container {
+    background-color: white;
+    width: 200px;
+    Height:100px;
+    display:flex;
+}
+
+#container div {
+    width:50px;
+    height:50px;
+}
+
+#container2 {
+    background-color: white;
+    width:200px;
+    Height:100px;
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+#container2 div {
+    width:50px;
+    height:50px;  
+}
+
+#container3 {
+    background-color: white;
+    width:100px;
+    Height:300px;
+    display:flex;
+    flex-direction: column;
+}
+
+#container3 div {
+    width:50px;
+    height:50px;  
+}
+#container4 {
+    background-color: white;
+    width:100px;
+    Height:300px;
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+#container4 div {
+    width:50px;
+    height:50px;  
+}
+#container5 {
+    background-color: white;
+    width:100px;
+    Height:300px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#container5 div {
+    width:50px;
+    height:50px;  
+}
