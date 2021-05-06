@@ -103,65 +103,86 @@
     background-color: wheat;
     margin-left: 500px;
 }
-#container {
-    background-color: white;
-    width: 200px;
-    Height:100px;
-    display:flex;
+
+#sectionTen {
+    background-color: rgba(110, 100, 155, 1);
 }
 
-#container div {
-    width:50px;
-    height:50px;
+#sectionTenContainer {
+    width: 350px;
+    height: 150px;
+    background-color: white;
+    display: flex;
 }
 
-#container2 {
+#sectionTenContainer div {
+    width: 50px;
+    height: 50px;
+}
+
+#sectionTenContainer2 {
+    width: 350px;
+    Height: 150px;
     background-color: white;
-    width:200px;
-    Height:100px;
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
 }
 
-#container2 div {
-    width:50px;
-    height:50px;  
+#sectionTenContainer2 div {
+    width: 50px;
+    height: 50px;
 }
 
-#container3 {
+#sectionTenContainer3 {
+    width: 150px;
+    Height: 350px;
     background-color: white;
-    width:100px;
-    Height:300px;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-#container3 div {
-    width:50px;
-    height:50px;  
+#sectionTenContainer3 div {
+    width: 50px;
+    height: 50px;
 }
-#container4 {
+
+#sectionTenContainer4 {
+    width: 150px;
+    Height: 350px;
     background-color: white;
-    width:100px;
-    Height:300px;
-    display:flex;
+    display: flex;
     flex-direction: column-reverse;
 }
 
-#container4 div {
-    width:50px;
-    height:50px;  
+#sectionTenContainer4 div {
+    width: 50px;
+    height: 50px;
 }
-#container5 {
+
+#sectionTenContainer5 {
+    width: 150px;
+    Height: 150px;
     background-color: white;
-    width:100px;
-    Height:300px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#container5 div {
-    width:50px;
-    height:50px;  
+#sectionTenContainer5 div {
+    width: 50px;
+    height: 50px;
+}
+
+#sectionTenContainer6 {
+    width: 150px;
+    Height: 150px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+#sectionTenContainer6 div {
+    width: 50px;
+    height: 50px;
 }

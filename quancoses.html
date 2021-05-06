@@ -513,38 +513,46 @@
         ensuring a homogenous font across all users.</div><br>
     <div>To do this, we go <a href="https://fonts.google.com/">here</a>, then choose the fonts/weights that we want.
         Next we get the link from the site and paste it into the head. The website will also show you what to type into
-        your css to access the font.</div>
+        your css to access the font.
+    </div>
 
 
-    <div id="sectionTen"></div>
-    <h1>Section Ten</h1>
-    <h2>CSS Flexbox</h2>
-    <div>What is it?
+    <div id="sectionTen">
+        <h1>Section Ten</h1>
+        <h2>CSS Flexbox</h2>
+        <div>What is it?</div>
         <ul>Flexbox is a one-dimensional layout method for laying out items in rows or columns.
         </ul>
         <ul>Flexbox allows us to distribute space dynamically across elements of an unknown size.</ul>
 
         <img src="https://i.stack.imgur.com/9Oxw7.png" alt="flexmodel">
-        <h2>Flex Direction</h2>
+        <h2>Flex-Direction: This defines what the main axis is and the direction (order). Default is set to row.</h2>
+        <div class="bold">Syntax: <br>
+            Selector { <br>
+            &emsp; Flex-direction: [yourInput];<br>
+            }
+        </div>
         <ul>
-            <li>Row</li>
-            <section id="container">
+            <li>Row: The first element in the box will be placed at the left with each element following to the right.
+            </li>
+            <section id="sectionTenContainer">
                 <div style="background-color:red"></div>
                 <div style="background-color:orange"></div>
                 <div style="background-color:yellow"></div>
                 <div style="background-color:green"></div>
                 <div style="background-color:blue"></div>
             </section>
-            <li>Row Reverse</li>
-            <section id="container2">
+            <li>Row Reverse: The first element in the box will be placed at the right with each element following to the
+                left.</li>
+            <section id="sectionTenContainer2">
                 <div style="background-color:red"></div>
                 <div style="background-color:orange"></div>
                 <div style="background-color:yellow"></div>
                 <div style="background-color:green"></div>
                 <div style="background-color:blue"></div>
             </section>
-            <li>Column</li>
-            <section id="container3">
+            <li>Column: </li>
+            <section id="sectionTenContainer3">
                 <div style="background-color:red"></div>
                 <div style="background-color:orange"></div>
                 <div style="background-color:yellow"></div>
@@ -553,32 +561,164 @@
             </section>
             </section>
             <li>Column Reverse</li>
-            <section id="container4">
+            <section id="sectionTenContainer4">
                 <div style="background-color:red"></div>
                 <div style="background-color:orange"></div>
                 <div style="background-color:yellow"></div>
                 <div style="background-color:green"></div>
                 <div style="background-color:blue"></div>
             </section>
-            <li>Flex Wrap</li>
-            <section id="container5">
-                <div style="background-color:red"></div>
-                <div style="background-color:orange"></div>
-                <div style="background-color:yellow"></div>
-                <div style="background-color:green"></div>
-                <div style="background-color:blue"></div>
-            </section>
+
         </ul>
+        <h2>Justify-Content: This defines how space is distributed between and around the items in the box.</h2>
+        <div class="bold">Justify-content: flex-start;</div>
+        <div>&emsp;The items are packed flush to each other toward the edge of the alignment container depending on the
+            flex container's main-start side.</div>
+        <div class="bold">Justify-content: flex-end;</div>
+        <div>&emsp;The items are packed flush to each other toward the edge of the alignment container depending on the
+            flex container's main-end side.</div>
+        <div class="bold">Justify-content: center;</div>
+        <div>&emsp;The items are packed flush to each other toward the center of the alignment container along the main
+            axis.</div>
+        <div class="bold">Justify-content: space-between;</div>
+        <div>&emsp;The items are evenly distributed within the alignment container along the main axis. The spacing
+            between each pair of adjacent items is the same. The first item is flush with the main-start edge, and the
+            last item is flush with the main-end edge.</div>
+        <div class="bold">Justify-content: space-around;</div>
+        <div>&emsp;The items are evenly distributed within the alignment container along the main axis. The spacing
+            between each pair of adjacent items is the same. The empty space before the first and after the last item
+            equals half of the space between each pair of adjacent items.</div><br>
 
+        <div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content">Here </a>are all the options.
+        </div><br>
 
+        <h2>Flex-Wrap: The flex items break into multiple lines. This also chooses the direction of our cross axis.</h2>
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <h3>Wrap</h3>
+        <div>This uses a normal main-axis direction and normal cross-axis direction.</div>
 
+        <div class="bold">Syntax: <br>
+            Selector { <br>
+            &emsp; flex-wrap: wrap;<br>
+            }
+        </div>
+
+        <section id="sectionTenContainer5">
+            <div style="background-color:red"></div>
+            <div style="background-color:orange"></div>
+            <div style="background-color:yellow"></div>
+            <div style="background-color:green"></div>
+            <div style="background-color:blue"></div>
+        </section>
+
+        <h3>Wrap-reverse</h3>
+        <div>This has a normal main-axis direction, but reverses the cross-axis direction.</div>
+
+        <div class="bold">Syntax: <br>
+            Selector { <br>
+            &emsp; flex-wrap: wrap-reverse;<br>
+            }
+        </div>
+
+        <section id="sectionTenContainer6">
+            <div style="background-color:red"></div>
+            <div style="background-color:orange"></div>
+            <div style="background-color:yellow"></div>
+            <div style="background-color:green"></div>
+            <div style="background-color:blue"></div>
+        </section>
+
+        <h2>Align-Items: Controls the alignment on an individual line on the cross-axis. Think of this as the height of
+            all the words on a line in microsoft word.
+            the cross-axis.</h2>
+        <div class="bold">align-items: flex-start;</div>
+        <div>&emsp;The cross-start margin edges of the flex items are flushed with the cross-start edge of the line.
+        </div>
+        <div class="bold">align-items: flex-end;</div>
+        <div>&emsp; The cross-end margin edges of the flex items are flushed with the cross-end edge of the line.</div>
+        <div class="bold">align-items: center;</div>
+        <div>&emsp; The flex items' margin boxes are centered within the line on the cross-axis. If the cross-size of an
+            item is larger than the flex container, it will overflow equally in both directions.
+        </div>
+        <div class="bold">align-items: baseline;</div>
+        <div>&emsp; Aligns by the basline of the text within the elements.</div>
+        <div>More <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items">here</a>.</div>
+
+        <h2>Align-Content: Only works when we have multiple lines (columns/rows). Determines the spacing between the
+            lines. Think of this one as the line spacing in microsoft word. </h2>
+        <div class="bold">align-content: space-between;</div>
+        <div>&emsp; Distribute items evenly. The first item is flush with the start, the last is flush with the end
+        </div>
+        <div class="bold">align-content: space-around;</div>
+        <div>&emsp; Distribute items evenly. Items have a half-size space on either end.</div>
+        <div>More <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content">here</a>.</div>
+
+        <h2>Align-Self: Similar to align-items, but it is for individual items.</h2>
+        <div class="bold">align-self: center;</div>
+        <div>&emsp;The flex item's margin box is centered within the line on the cross-axis. If the cross-size of the
+            item is larger than the flex container, it will overflow equally in both directions.
+        </div><br>
+        <div>Just look <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-self">here</a>. Literally the
+            same as align-items.</div>
+
+        <h2>Flex-Basis: Sets the initial size of an element along the main-axis.</h2>
+        <div class="bold">flex-basis: [someSize];</div>
+        <div>&emsp;If we set the flex-basis of something in a row, it will determine the width. If we set the flex-basis
+            to something in a column, it will determine the height.</div>
+
+        <h2>Flex-grow: This allows the elements to grow to grow into all of the available space, along the main axis
+            (assuming no max-width/max-height is assigned).</h2>
+        <div class="bold">flex-grow:[unitlessNumber];</div>
+        <div>&emsp;Imagine there are 2 items in a box. Box1 gets assigned 1 for flex-grow and box2 gets assigned 2 for
+            flex-grow. Box 2 will take up twice as much of the available space when growing. Just the available space;
+            not the total space.</div>
+
+        <h2>Flex-shrink: Exactly the same as flex-grow, but instead of determining the rate something grows, it is
+            determining how fast it shrinks. A bigger number means it will shrink faster.</h2>
+        <div class="bold">flex-shrink: [unitlessNumber];</div>
+
+        <h2>Flex Shorthand: This is a shorthand for grow, shrink, and basis.</h2>
+        <div>Checkout the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">link</a> to know the orders.
+        </div>
+
+        <h2>Responsive Design: Coding in a way to allow a single website respond to multiple types of displays/users.
+        </h2>
+
+        <h2>Media Queries: This is one of the main tools we use to make a website responsive. Some examples would be
+            having a nav bar collapse when the screen gets too small, or having a row turn into a column if the screen
+            gets too narrow. It can be whatever you want.</h2>
+
+        <div class="bold">Syntax: <br>
+            @media ([someParameter]) { <br>
+            &emsp; selector {<br>
+            &emsp;&emsp;property: value;<br>
+            &emsp;&emsp;} <br>
+            &emsp; selector {<br>
+            &emsp;&emsp;property: value;<br>
+            &emsp;&emsp;} <br>
+            &emsp; selector {<br>
+            &emsp;&emsp;property: value;<br>
+            &emsp;&emsp;}.... <br>
+            &emsp;} <br> <br>
+        </div>
+
+        <div>You can find all of the media features (options as a parameter) <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#media_features">here.</a>
+        </div>
+
+        <h3>Combining media queries</h3>
+       
+        <div class="bold">@media ([someParameter]) and ([someParameter]) { <br>
+        &emsp; selector {<br>
+        &emsp;&emsp;property: value;<br>
+        &emsp;&emsp;} <br>
+        &emsp;} <br>
+        </div>
+        
     </div>
+
+
+
 </body>
 
 </html>
