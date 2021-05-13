@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Review</title>
+    <link rel="stylesheet"
+        href="https://toert.github.io/Isolated-Bootstrap/versions/4.0.0-beta/iso_bootstrap4.0.0min.css">
+    >
     <link rel="stylesheet" href="quancoses.css">
 </head>
 
@@ -717,7 +720,251 @@
 
     </div>
 
+    <div class="bootstrap">
+        <div id="sectionTwelve">
+            <h1>Section Twelve</h1>
+            <h2>CSS Frameworks: Bootstrap</h2>
+            <div>
+                <ul>
+                    <li>Bootstrap helps us quickly build responsive websites.</li>
+                    <li>Components - Bootstrap gives access to several pre-built components that can be used when
+                        creating
+                        websites.
+                    </li>
+                    <li>Grid System - Bootstrap also comes with a grid system, which helps when creating custom,
+                        responsive
+                        layouts.
+                    </li>
+                </ul>
+                <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/">Here</a> is where you can find
+                the
+                Bootstrap content. To include bootstrap into your coding, find the the style sheet link and include it
+                in
+                your
+                head in html before the css stylesheet.
 
+                <h3>Containers</h3>
+                <div>
+                    <div id="sectionTwelveContainer"><span class="bold">Container:</span> The most basic layout element
+                        in
+                        Bootstrap and are REQUIRED when using their default grid system. Containers can be used to
+                        contain,
+                        pad,
+                        and center the content.
+                        <ul>
+                            Bootstrap comes with three different containers:
+                            <li>
+                                <div id="sectionTwelveContainerEx"><span class="bold">.container:</span> sets a
+                                    max-width at
+                                    each responsive breakpoint
+                            </li>
+                            <li>
+                                <div id="sectionTwelveContainerEx2"><span class="bold">.container-fluid:</span> width is
+                                    100% at
+                                    all breakpoints
+                            </li>
+                            <li>
+                                <div id="sectionTwelveContainerEx3"><span class="bold">.container-{breakpoint}:</span>
+                                    width
+                                    is
+                                    100% until specified breakpoint
+                            </li>
+                            <a href="https://getbootstrap.com/docs/4.5/layout/overview/#containers">Here</a> for grid
+                            example
+                        </ul>
+                    </div>
+                    <h3>Bootstrap Buttons</h3>
+                    Bootstrap has several predefined button styles, each serving its own sematic purpose
+                    <div>
+                        <h4>Examples</h4>
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-success">Success</button>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-info">Info</button>
+                        <button type="button" class="btn btn-light">Light</button>
+                        <button type="button" class="btn btn-dark">Dark</button>
+                        <button type="button" class="btn btn-link">Link</button>
+                    </div>
+                    <a href="https://getbootstrap.com/docs/4.5/components/buttons/">Here</a> for more button attributes
+                    <h3>Bootstrap Grid</h3>
+                    <div>
+                        <ul>
+                            <li>The grid system uses a series of containers, rows, and columns to layout and align
+                                content.
+                            </li>
+                            <li>Grid system is built with flexbox and is fully responsive.</li>
+                            <li>Grid system only works inside of a container, so a container class needs to be used.
+                            </li>
+                            <li>Need to create a row using the class of row and every row in Bootstrap has 12 units of
+                                space
+                                to
+                                divvy up.</li>
+                            <li>Need to create columns in our row. Every piece that we want to divvy up in a given row
+                                is
+                                going
+                                to be column.(starts with .col)
+                                <ul>
+                                    <li>The column classes indicate the number of columns you'd like to use out of the
+                                        possible
+                                        12 per
+                                        row.</li>
+                                    <li>If you do not indicate the size (col), the width will be autosized. </li>
+                                </ul>
+                            </li>
+                            <li>Example below
+
+                            </li>
+
+                            <div class="container">
+                                <h1 class="display-1 text-center text-primary">The Grid System</h1>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        One of three columns
+                                    </div>
+                                    <div class="col-sm">
+                                        One of three columns
+                                    </div>
+                                    <div class="col-sm">
+                                        One of three columns
+                                    </div>
+                                </div>
+                            </div>
+
+                        </ul>
+                        <h3>Responsive Bootstrap Grid</h3>
+                        <ul>
+                            <li>Bootstrap's grid includes five tiers of predefined classes for building complex
+                                responsive
+                                layouts.(i.e. xs, sm, md, lg, xl)
+                                <ul>
+                                    <li> <a href="https://getbootstrap.com/docs/4.5/layout/grid/">Here</a> for sizing
+                                        chart.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Example below shows the responsive bootstrap grid. At the max container width extra
+                                small
+                                and
+                                small each rows occupies 12 units. At the max container width starting from medium each
+                                row
+                                occupies
+                                3 units each and once it hits the max container width of xl each row occupies 6 units.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+
+                            <div id="sectionTwelveContainer1" class="col-md-3 col-xl-6">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem expedita numquam
+                                suscipit
+                                necessitatibus vero iste magnam voluptates accusamus doloremque dolorum dignissimos
+                                minima
+                                commodi soluta, voluptatibus laboriosam voluptatum natus. Quae, corporis!
+                            </div>
+
+
+                            <div id="sectionTwelveContainer2" class="col-md-3 col-xl-6">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, molestias, in
+                                ex
+                                quia
+                                nulla blanditiis deleniti dolorem explicabo optio aperiam quo ea rerum a fuga neque
+                                officiis, voluptatum cumque aut.
+                            </div>
+
+
+                            <div id="sectionTwelveContainer3" class="col-md-3 col-xl-6">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae perferendis maiores
+                                eveniet
+                                aut doloremque rerum odio voluptatum reiciendis magnam, ipsam maxime iure veritatis
+                                sapiente
+                                minima minus vitae necessitatibus unde eum?
+                            </div>
+
+
+                            <div id="sectionTwelveContainer4" class="col-md-3 col-xl-6">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellendus, non
+                                obcaecati, nobis dolor aliquid fugit doloribus ad quibusdam inventore enim
+                                cupiditate
+                                deleniti quos. Corporis voluptatem voluptatum facilis consequuntur vitae.
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="bootstrap">
+
+                    </div>
+                    <ul>
+                        <li>You can use the same principles for images </li>
+                        <li>
+                            <a href="https://getbootstrap.com/docs/4.5/content/images/#responsive-images">Here
+                            </a>is
+                            the
+                            code for making images repsonsive.
+                        </li>
+                    </ul>
+                    <div class="containerTwo">
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-fluid"
+                                    src="https://www.insidehighered.com/sites/default/server_files/media/iStock-520374378.jpg">
+
+
+                                <h3>Bootstrap Navbar</h3>
+                                <ul>
+                                    <li>Navbars require a wrapping .navbar with .navbar-expand{-sm|-md|-lg|-xl} for
+                                        responsive collapsing and color scheme classes.</li>
+                                    <li>Navbars and their contents are fluid by default. Use optional containers to
+                                        limit
+                                        their horizontal width.</li>
+                                    <li>Ensure accessibility by using a <nav> element or, if using a more generic
+                                            element
+                                            such as a <div>, add a role="navigation" to every navbar to explicitly
+                                                identify
+                                                it as a landmark region for users of assistive technologies.</li>
+
+                                    <li><a href="https://getbootstrap.com/docs/4.5/components/navbar/">Here</a>is
+                                        the
+                                        link
+                                        for navbar</li>
+                                </ul>
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                    <a class="navbar-brand" href="#">Navbar</a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                        <div class="navbar-nav">
+                                            <a class="nav-link active" href="#">Home <span
+                                                    class="sr-only">(current)</span></a>
+                                            <a class="nav-link" href="#">Features</a>
+                                            <a class="nav-link" href="#">Pricing</a>
+                                            <a class="nav-link disabled" href="#" tabindex="-1"
+                                                aria-disabled="true">Disabled</a>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                                    crossorigin="anonymous"></script>
+                                <script
+                                    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+                                    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+                                    crossorigin="anonymous"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
