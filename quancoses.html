@@ -965,6 +965,198 @@
             </div>
         </div>
     </div>
+    
+    <div id="sectionFourteen">
+        <h1>Section Fourteen</h1>
+        <h2>Primitive Types: Basic building blocks of JS</h2>
+        <ul>
+            <li>Numbers</li>
+            <li>Strings</li>
+            <li>Boolean</li>
+            <li>Null</li>
+            <li>Undefined</li>
+            <li>(Extra)
+                <ul>
+                    <li>Symbol</li>
+                    <li>BigInt</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Numbers: In JS there is only 1 number type. This includes all whole numbers, decimals, negatives.</h2>
+
+        <h3>Operators</h3>
+        <ul>
+            <li>Addition: +</li>
+            <li>Subtraction: -</li>
+            <li>Multiplicaiton: *</li>
+            <li>Division: /</li>
+            <li>Modulo: %</li>
+            <li>Exponentiation: **</li>
+        </ul>
+
+        <h3>NaN: Not a number.</h3>
+        <div> It is considered a number by JS but it represents something that is not a number. If we use the "typeOf"
+            operator on an NaN, it will say it is a number. Some examples of NaN: 0/0 = NaN, doing math with a number (5
+            + nipples = NaN), 1 + NaN = NaN.</div>
+
+        <h3>Variables: Basically a label for some value. This value will be stored in memory somewhere so we can come
+            back
+            to it, call it later, update it, et.</h3>
+        <h3>The Variable "let"</h3>
+        <div class="bold"> Syntax: <br>
+            let someName = value;
+        </div>
+
+        <h3>Note about saving values in a varibale</h3>
+        <div>Lets pretend we have the following variables: <br><br>
+            let var1 = 5;<br>
+            let var 2 = 1; <br><br>
+
+            We currently have 2 variables, each with a distinct value. One thing we can do is save the total of those 2
+            values into a third variable like so: <br><br>
+            let total = var1 + var2; <br>
+            Total equals 6 (5 + 1) <br><br>
+
+            If we print the variable "total", we will get a value of 6. Now, if we update the value of one of the first
+            two variables, the value of "total" will not change. It was just a snapshot in time when we created the
+            variable. var1 and var2 are not intrinsically connected to total.<br><br>
+            let var1 = var1 + 5; <br>
+            var1 now equals 10, but total is still 6.
+        </div>
+        <h3>Variable Naming Conventions</h3>
+        <ul>
+            <li>Cannot have spaces in the varibale name</li>
+            <li>It may have numbers</li>
+            <li>It cannot start off with a digit</li>
+            <li>Not required, but they should be camelCased</li>
+            <li>Make sure the variable name explains the value well. For example, if we are working with a boolean and
+                the value is supposed to tell you if something is finished, name it "isFinished" instead of "finished".
+            </li>
+        </ul>
+
+
+        <h2>Updating Numbers in a Variable</h2>
+        <span>let num = 5;</span><br><br>
+        <span>num = num + 5;</span><br>
+        <span>num now equals 10</span><br><br>
+        <span>num += 5;</span><br>
+        <span>num now equals 15</span><br><br>
+        <span>num ++;</span><br>
+        <span>num now equals 16</span><br>
+        <span>We can do all of these with division and mltiplication as well. When something is updated it is saved in
+            memory, so the changes will not disappear.</span>
+
+        <h3>The variable "const"</h3>
+        <div class="bold"> Syntax: <br>
+            const someName = value;
+        </div>
+        <div>The const variable is similar to the const variable, but the difference is that the value cannot be changed
+            (it is constant).</div>
+
+        <h2>Booleans: This is a primitive type that has a value of either true or false.</h2>
+        <h3>Sidenote: a variable can change type. If we made the varible let puppies = 5; then later changed it to let
+            puppies = false;, it changed from a number to a boolean.</h3>
+
+    </div>
+    <div id="sectionFifteen">
+        <h1>Section 15</h1>
+        <h2>Strings: They are another primitive type that represent text and must be wrapped in quotes (double or
+            single). The quotes tell JS that we are working with text. It is a "string" of characters.</h2>
+
+        <h3>Strings Are Indexed</h3>
+        <div>This means that every character in a strong has a position number (index) that represents where it is in
+            the string. It starts of with 0, then increases incrementally until the string is over.</div>
+        <img src="../media/indexExample.png" alt="indexExample"><br>
+        <div>Lets make the following variable: <br><br> let name ="Ashe";<br><br>If want to accesss specific characters
+            within the string, we can do so with square brackets.</div>
+        <div>Ashe[0] would yeild "A"</div>
+        <div>Ashe[3] would yeild "e"</div>
+        <div>Ashe[100] would yeild "Undefined" which is another primitive type. JS is basically saying that at that
+            index, nothing is defined. </div>
+
+        <h3>Concatenation: the addition of strings. When we add 2 strings using the + operator, we will add those two
+            strings together.</h3>
+        <h3>We cannot "update" a string character by character. So if we want to change "Ashe" to "ashe", we cannot just
+            make the "A" turn into an "a". But what we can do is just replace the whole string from "Ashe" to "ashe".
+            This subtle difference just shows that in memory, it is being saved to a new place, rather than just
+            updating the info and saving in the same place.</h3>
+
+        <h3>.length property: if we add the .length method onto a string, it will tell you how many characters are in
+            that string. So taking that example we made above, we could input name.length and it would give us 4.</h3>
+
+        <h3>If we try to add a number with a string, JS will convert the number into a string and concatenate the two.
+            ex. 5 + "poop" would turn into 5poop</h3>
+
+        <h3>String Methods: these are built-in actions that we can perform with individual strings</h3>
+        <div>On the side of the <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">website</a>,
+            there is a list of all the mthods that are available.</div><br>
+        <div class="bold">Syntax:<br> thing.method() </div><br>
+
+        <div>Sidenote: .length is a <span class='bold'> property</span>, whereas .toLowerCase() is a <span class="bold">
+                method.</span> In general; a property represents data, in this case the number of characters in a
+            string; and a method is an action, in thise case turning the characters in a string to lowercase.</div><br>
+
+        <div>You can chain multipe methods onto a single string. ex. <br> name.trim().toUpperCase()</div><br>
+        <div>Some methods are <span class="bold">destructive</span> and others are <span
+                class="bold">nondestructive</span>. Destuctive means that it will update the original string, while
+            nondestructive methods leave the original string unchanged.</div>
+
+        <h3>String Methods with Arguments: methods where we can pass an input into the method to alter how they behave.
+        </h3>
+        <div class="bold"> Syntax: <br> thing.method(arg)</div><br>
+        <div>Ex: <br> name.indexOf(Ash); &#8594; will give 0 becuase it starts at the index 0</div>
+        <div>name.indexOf(she); &#8594; will give index of 1</div>
+        <div>name.indexOf(fuckYouAsshole); &#8594; will give index of -1 because it does not exist</div>
+        <h4>List of some methods with arguments:</h4>
+        <ul>
+            <li><a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf">indexOf(arg)</a>
+                &#8594; this tells you the index of the first occurence of your argument</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice">slice(arg1,
+                    arg2)</a> &#8594; this extracts a portion of a string and returns it as a new string, without
+                modifying the original string. You can enter just a beginning index, or a beginning and ending index
+                seperated with a coma.</li>
+            <li><a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace">replace(arg1,
+                    arg2)</a> &#8594; this jsut replaces what you want to take out with something new. arg1 is what you
+                want to replace, arg2 is the replacement. It just replaces the first instance of arg1.</li>
+            <li><a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll">replaceAll(arg1,
+                    arg2)</a>&#8594; same as replace but replaces all instances instead of just the first instance.</li>
+        </ul>
+        <div>Sidenote: Methods that ask for indexes for the argument can also use negative numbers. The negative just
+            points the method to the back of the sting instead of starting from the front. Ex. <br> If we did
+            name.slice(-2) it would just give us he. The very last position is numbered at -1 and counts beckward from
+            there. So, the second to last position is -2. So for the example we just did, I sliced out the he from Ashe
+            since I told it to start at -2 &#8594; As(he) </div>
+
+        <h3>String Template Literals: these are strings that allow embedded expressions, which will be evaluated and
+            turned into a string</h3>
+        <div>This is better described with an example first. Look below freak:</div><br>
+        <div class="bold"> `I have ${2 + 3} dollars`; &#8594; evaluates to "I have 5 dollars"</div><br>
+        <div>We use backticks(`) instead of quotations to encompass the string. The stuff inside of the brackets gets
+            evaluated and turned into a string, and this has to be preceded by the dollar sign.</div><br>
+        <div>We can also evaluate variables inside of the string template literal. Look below flarf:</div><br>
+
+        <div class="bold"> let numApples = 5; <br> let num oranges = 4;<br><br> `I have ${numApples + numOranges} fruits
+            in my pants`; &#8594; evaluates to "I have 9 fruits in my pants"</div>
+
+        <h2>Null: primitive type. An intentional absence of any value </h2>
+        <div>You can set a variable equal to null.</div>
+
+        <h2>Undefined: primitive type. Variables that do not have an assigned value</h2>
+        <div>This is basically JS's way of saying it does not know. "There is nothing defined here bitch."</div>
+
+        <h2>Math Object: contains properties and methods for mathematical constants and functions.</h2>
+        <div>We will learn later what an object is, but this is an example of one.</div>
+        <div><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math">Here</a>
+            are all of the things contained in the math object.</div>
+
+
+    </div>
+
 
 </body>
 
