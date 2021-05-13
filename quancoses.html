@@ -965,7 +965,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="sectionFourteen">
         <h1>Section Fourteen</h1>
         <h2>Primitive Types: Basic building blocks of JS</h2>
@@ -1189,9 +1189,9 @@
         <ul>
             <li>code will run if the given condition is true </li>
             <li>ex: let rating = 3 <br>
-                 If (rating === 3) { <br>
-                    &emsp;console.log("YOURE A STAR") <br>
-                 } </li>
+                If (rating === 3) { <br>
+                &emsp;console.log("YOURE A STAR") <br>
+                } </li>
         </ul>
         <h2>Else If</h2>
         <ul>
@@ -1200,7 +1200,7 @@
             <li>you can have multiple Else If's but order matters </li>
             <li>ex: else if () { <br>
                 &emsp;<br>
-            } </li>
+                } </li>
         </ul>
         <h2>Else</h2>
         <ul>
@@ -1208,7 +1208,7 @@
             <li>If nothing else is true then the final Else statement will run </li>
             <li>ex: else () { <br>
                 &emsp;<br>
-            } </li>
+                } </li>
         </ul>
         <h2>Truthy and Falsy Values</h2>
         <ul>
@@ -1244,37 +1244,39 @@
             &emsp;!(0 === 0) (false) <br>
             &emsp;let firstName = prompt ("enter first name") <br>
             &emsp;if (!firstName) { <br>
-                &emsp;&emsp;firstName = prompt("try again") <br>
-                &emsp;} <br>
+            &emsp;&emsp;firstName = prompt("try again") <br>
+            &emsp;} <br>
         </ul>
         <h2>Switch Statement</h2>
         <ul>
             <li>another control-flow statement that can replace multiple If statements </li>
             <li>ex: const day = 2 </li>
             &emsp;switch (day) { <br>
-                &emsp;&emsp;case 1: <br>
-                &emsp;&emsp;&emsp;console.log('Monday'); <br>
-                &emsp;&emsp;&emsp;break; <br>
-                &emsp;&emsp;case 2: <br>
-                &emsp;&emsp;&emsp;console.log('Tuesday') <br>
-                &emsp;&emsp;&emsp;break; <br>
-                &emsp;&emsp;... <br>
-                &emsp;&emsp;case 5: <br>
-                &emsp;&emsp;case 6: <br>
-                &emsp;&emsp;case 7: <br>
-                &emsp;&emsp;&emsp;console.log('Weekend') <br>
-                &emsp;&emsp;&emsp;break; <br>
-                 } <br>
+            &emsp;&emsp;case 1: <br>
+            &emsp;&emsp;&emsp;console.log('Monday'); <br>
+            &emsp;&emsp;&emsp;break; <br>
+            &emsp;&emsp;case 2: <br>
+            &emsp;&emsp;&emsp;console.log('Tuesday') <br>
+            &emsp;&emsp;&emsp;break; <br>
+            &emsp;&emsp;... <br>
+            &emsp;&emsp;case 5: <br>
+            &emsp;&emsp;case 6: <br>
+            &emsp;&emsp;case 7: <br>
+            &emsp;&emsp;&emsp;console.log('Weekend') <br>
+            &emsp;&emsp;&emsp;break; <br>
+            } <br>
             <li>things to note here are that you uses cases and order numerically </li>
-            <li>You want to add in "breaks" when you want the code to end there. Going back to the example, if I were to input 1 as the day const then the console would log Monday-Sunday rather than just Monday so by adding a "break" after Monday it would stop there. </li>
+            <li>You want to add in "breaks" when you want the code to end there. Going back to the example, if I were to
+                input 1 as the day const then the console would log Monday-Sunday rather than just Monday so by adding a
+                "break" after Monday it would stop there. </li>
         </ul>
     </div>
-    
+
     <div id="sectionSeventeen">
         <h1>Section 17</h1>
         <h2>Arrays</h2>
         <ul>
-            <li>ordered collecton of values 
+            <li>ordered collecton of values
                 <ul>
                     <li>list of comments</li>
                     <li>collection of levels in a game</li>
@@ -1284,10 +1286,10 @@
             <li>ex: let colors = ['red', 'white', 'blue'] </li>
             &emsp;let numbers = [1, 2, 3] <br>
             <li>note: need to use square brackets for the array </li>
-            <li>arrays are indexed, counting starts at zero 
+            <li>arrays are indexed, counting starts at zero
                 <ul>
                     <li>ex: (colors example) red has index of 0, white has index of 1, blue has index of 2</li>
-                    &emsp;colors[0] = 'red' 
+                    &emsp;colors[0] = 'red'
                 </ul>
             </li>
         </ul>
@@ -1338,11 +1340,100 @@
                     <li>sort: sorts an array</li>
                 </ul>
             </li>
-            <li>link to list of methods (listed on left side) &#8594; <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Here</a> </li>
+            <li>link to list of methods (listed on left side) &#8594; <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Here</a>
+            </li>
         </ul>
     </div>
 
+    <div id="sectionEighteen">
+        <h1>Section Eighteen</h1>
+        <h2>JS Objects</h2>
+        <ul>
 
+            <li>Objects are collections of properties</li>
+            <ul>
+                <li>objects allow us to create key-value pairs where we don't need to usea number to access of
+                    information.</li>
+                <li> Objects is a broad term, so object literal is used to specifically refer to the key-value pair data
+                    stores.</li>
+                <li>A property is two pieces of information</li>
+                <ul>
+                    <li>A key (label) and a value; so objects are just bunches of these pairs.</li>
+                    <li>Every key we make in an object is converted to a string (except symbols).</li>
+                </ul>
+            </ul>
+            <li>Instead of accessing data using an index, custom keys are used.</li>
+            <li>
+                Here is an example of what an object would look like:
+                <ul>
+
+                    <img id="sectionEighteenPicture"
+                        src="https://media-private.canva.com/MADqMfCO-14/1/screen.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20210512%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210512T051820Z&amp;X-Amz-Expires=74030&amp;X-Amz-Signature=4baa8593a039acbf9285241a765495417ef669a2f38bf91dfb99fe1e910c92d9&amp;X-Amz-SignedHeaders=host&amp;response-expires=Thu%2C%2013%20May%202021%2001%3A52%3A10%20GMT"
+                        alt="sectionEighteenPic">
+
+                    <li> The left side of the colon is a variable and the right side is the value.
+                    </li>
+                    <li>Order does not matter</li>
+                </ul>
+            </li>
+
+        </ul>
+        <h2>Accessing Data Out of Objects</h2>
+        When accessing data from the object there are two ways to do this:
+        <ol>
+            <li>Use the variable and then square brackets and quotations inside the
+                square bracket surrounding the value.</li>
+            <ul>
+                <li>For example from the object above if you wanted to access total steps you would type <div
+                        id="sectionEighteenObjectEx"><span class="bold">fitBitData
+                            ["totalSteps"]</span> (This is the KEY) </li>
+                <li>The curly brackets are only used for declaring the object</li>
+                <li>Does not work without quotes.</li>
+            </ul>
+            <li>Use the variable and then add a "." followed by the value</li>
+            <ul>
+                <li>For example from the object above if you wanted to access total miles you would type
+                    <div id="sectionEighteenObjectEx2"><span class="bold">fitBitData.totalMiles</span>
+                </li>
+                <li>Quotes cannot be used here</li>
+            </ul>
+
+        </ol>
+        <h2>Modifying Objects</h2>
+        When we use the key word const to declare an object variable, the container needs to stay the same, but the
+        insides can be swapped
+        <ul>
+            <li>If you wanted to update a value from an object you would access the variable and then add = and update
+                the value.</li>
+            <li>For example if you wanted to update the average calories burned from the example above you woudld type
+                <div id="sectionEighteenObjectEx3"><span class="bold">fitBitData
+                        ["avgCalorieBurn"]=6000 or fitBitData.avgCalorieBurn = 6000</span>
+            </li>
+            <li>If you wanted to add a new variable and value you would use the same principle</li>
+            <ul>
+                <li>Using the fitbit example if you wanted to add weight you would type <div
+                        id="sectionEighteenObjectEx4"><span class="bold">fitBitData
+                            ["weightInPounds"]=150 or fitBitData.weightInPounds = 150</span></li>
+            </ul>
+        </ul>
+        <h2>Nesting Arrays + Objects</h2>
+        <ul>
+            <li>Objects and arrays can be used together; it is a common pattern to have an array of objects or have
+                objects with an object/array inside. </li>
+            <li>Combining arrays and objects are much more powerful than on their own.</li>
+            <li>Example below: On the left is an array nested with objects and on the right is an object nested with
+                arrays.</li>
+            <img id="sectionEighteenPic2"
+                src="
+                    https://media-private.canva.com/MADqMFBiB3A/1/screen.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20210512%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210512T121701Z&amp;X-Amz-Expires=51809&amp;X-Amz-Signature=2d5c68a537fa6e9d139111ea5a92247260a1bf833b2ddae8a8977fb763838260&amp;X-Amz-SignedHeaders=host&amp;response-expires=Thu%2C%2013%20May%202021%2002%3A40%3A30%20GMT"
+                alt="">
+            <img id="sectionEighteenPic3"
+                src="
+                https://media-private.canva.com/MADqMkEr6_s/1/screen.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20210511%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210511T224851Z&amp;X-Amz-Expires=98497&amp;X-Amz-Signature=071c05a5c6060957b6f90dfa33f3764e443ba5f2d18751066b430f010e0f508d&amp;X-Amz-SignedHeaders=host&amp;response-expires=Thu%2C%2013%20May%202021%2002%3A10%3A28%20GMT"
+                alt="">
+        </ul>
+    </div>
 </body>
 
 </html>

@@ -203,3 +203,20 @@
 #sectionFourteen {
     background-color: lightsteelblue;
 }
+
+#sectionEighteen {
+    background-color: rgb(108, 158, 238) ;
+}
+#sectionEighteenPicture {
+    width:500px;
+height: 400px;
+}
+
+#sectionEighteenPic2 {
+    width:400px;
+    height:400px;
+}
+#sectionEighteenPic3 {
+    width:500px;
+    height:400px;
+}
