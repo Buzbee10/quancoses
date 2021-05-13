@@ -8,7 +8,7 @@
     <title>Coding Review</title>
     <link rel="stylesheet"
         href="https://toert.github.io/Isolated-Bootstrap/versions/4.0.0-beta/iso_bootstrap4.0.0min.css">
-        
+
     <link rel="stylesheet" href="quancoses.css">
 </head>
 
@@ -1283,8 +1283,8 @@
                     <li>songs in a playlist</li>
                 </ul>
             </li>
-            <li>ex: let colors = ['red', 'white', 'blue'] </li>
-            &emsp;let numbers = [1, 2, 3] <br>
+            <li>ex: let colors = ['red', 'white', 'blue']; </li>
+            &emsp;let numbers = [1, 2, 3]; <br>
             <li>note: need to use square brackets for the array </li>
             <li>arrays are indexed, counting starts at zero
                 <ul>
@@ -1295,7 +1295,7 @@
         </ul>
         <h3>Modifying Arrays</h3>
         <ul>
-            <li>ex: let colors = ['rad', 'white', 'blue'] </li>
+            <li>ex: let colors = ['red', 'white', 'blue']; </li>
             &emsp;colors[0] = 'red' <br>
             &emsp;"red" <br>
             <li>note: choose the index of the array you want to change </li>
@@ -1305,7 +1305,7 @@
             <li>Methods are like actions that you can do with arrays </li>
             <li>push: add to end of array (you can push more than one but order matters)
                 <ul>
-                    <li>ex: let numbers = [1, 2, 3]</li>
+                    <li>ex: let numbers = [1, 2, 3];</li>
                     &emsp;numbers.push(4)
                     &emsp;numbers = [1, 2, 3, 4]
                 </ul>
@@ -1434,6 +1434,57 @@
                 alt="">
         </ul>
     </div>
+
+    <div id="sectionNineteen">
+        <h1>Section 19</h1>
+        <h2>For Loop</h2>
+        <div class="bold"> Syntax: <br><br>
+            &emsp;for ([initialization]; [condition]; [increment]) { <br> &emsp;&emsp;[thing you want it to do]; <br> }
+        </div><br>
+        <img src="../media/forLoopExample.png" alt="">
+
+        <h2>Infinite Loops</h2>
+        <div>Be mindful of loops that don't have a stopping point. Make sure when you make a loop that the condition
+            will eventually evaluate to false, ending the loop.</div>
+
+        <h2>Iterating Over an Array Example</h2>
+        <img src="../media/iteratingOverArrayExample.png" alt="">
+
+        <h2>Nested Loops Example</h2>
+        <img src="../media/nestedLoopsExample.png" alt="">
+
+        <h2>While Loop</h2>
+        <div class="bold"> Syntax: <br><br>
+            &emsp;while ([condition]) { <br> &emsp;&emsp;[thing you want it to do]; <br> }
+        </div><br>
+        <img src="../media/whileLoopExample.png" alt="">
+
+        <h2>The Break Keyword: When a loop hits this keyword, the loop stops there immedietely, then proceeds to run
+            code after the loop.</h2>
+        <img src="../media/breakExample.png" alt="">
+
+        <h2>For...of Loop: this is a for loop specifically made for iterating over arrays or other iterable objects.
+        </h2>
+        <div class="bold"> Syntax: <br><br>
+            &emsp; <span class="blue">for</span> (variable <span class="blue">of</span> iterable) { <br>
+            &emsp;&emsp;[thing you want it to do]; <br> } </div><br>
+            <img src="../media/forOfExample.png" alt="">
+
+            <h2>For...in Loop: this is used to iterate over objects.</h2>
+            <div>For this example, the loop is going to give you the keys. So in this case, the code will print "keenan", "damon", "kim",....</div><br>
+            <img src="../media/forInExample.png" alt=""> <br><br>
+            <div>If we want the value, we can use the key to give us the value as shown below.</div>
+            <img src="../media/forInExample2.png" alt=""><br><br>
+
+            <div> We can also get the keys from objects using the <span class="bold">Object.keys([object])</span> method. When we use this method, it will give us an array of all the keys.</div><br>
+            We can also do this with the values of an object, using the <span class="bold">Object.values([object])</span> method. <br><br>
+
+            <div>Finally, we can get a nested array of the key value pairs using the <span class="bold">Object.entries([object])</span> method.</div> <br><br>
+
+            <div>So if we wanted, we could use those methods with a for..of loop to get the same information instead of using a for..in. Just a different way of doing the same thing.</div>
+
+    </div>
+
 </body>
 
 </html>
