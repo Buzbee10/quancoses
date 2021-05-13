@@ -1157,6 +1157,191 @@
 
     </div>
 
+    <div id="sectionSixteen">
+        <h1>Section 16</h1>
+        <h2>Comparison Operators</h2>
+        <p>
+            "&gt;" // greater than <br>
+            "&lt;" // less than <br>
+            "&gt;=" // greater than or equal to <br>
+            "&lt;=" // less than or equal to <br>
+            "==" // equality <br>
+            &emsp;- checks for quality of value, but not equality of type <br>
+            &emsp;- it coerces both values to the same type and then compares them <br>
+            "!=" // not equal <br>
+            "===" // strict equality <br>
+            &emsp;- checks for equality of value and type <br>
+            "!==" strick non-equality <br>
+        </p>
+        <h2>Console, Alert, and Prompt</h2>
+        <ul>
+            <li>console.log(): prints argument to the console</li>
+            <li>alert(): prints pop-up in alert style</li>
+            <li>prompt(): prints prompt in a pop-up and allows user to type response</li>
+            <li>parseInt(): turns desired string into number(integer)</li>
+        </ul>
+        <h2>Connecting HTML to JS</h2>
+        <ul>
+            <li>write at end of "body": &lt;script src=""&gt;&lt;/script&gt;</li>
+            <li>in parentheses write the name of the html file </li>
+        </ul>
+        <h2>If Statement</h2>
+        <ul>
+            <li>code will run if the given condition is true </li>
+            <li>ex: let rating = 3 <br>
+                 If (rating === 3) { <br>
+                    &emsp;console.log("YOURE A STAR") <br>
+                 } </li>
+        </ul>
+        <h2>Else If</h2>
+        <ul>
+            <li>needs an If statement before the Else If statement </li>
+            <li>Else If statement will run if the If statement does not </li>
+            <li>you can have multiple Else If's but order matters </li>
+            <li>ex: else if () { <br>
+                &emsp;<br>
+            } </li>
+        </ul>
+        <h2>Else</h2>
+        <ul>
+            <li>written after If's and Else If's </li>
+            <li>If nothing else is true then the final Else statement will run </li>
+            <li>ex: else () { <br>
+                &emsp;<br>
+            } </li>
+        </ul>
+        <h2>Truthy and Falsy Values</h2>
+        <ul>
+            <li>Inherently falsy values: </li>
+            <li>false </li>
+            <li>0 </li>
+            <li>"" (empty string) </li>
+            <li>null </li>
+            <li>undefined </li>
+            <li>NaN </li>
+            <br>
+            EVERYTHING ELSE IS TRUTHY! <br>
+        </ul>
+        <h2>AND</h2>
+        <ul>
+            <li>use && to combine two statements </li>
+            <li>both sides of && must be true for the entire code to be true </li>
+            <li>ex: 1 <= 4 && 'a' === 'a' (true) </li>
+            &emsp;1 <= 4 && 'a' === 'b' (false) <br>
+        </ul>
+        <h2>OR</h2>
+        <ul>
+            <li>use || (located above return key) to combine to statements </li>
+            <li>if one side is true (can be both sides), the entire code is true </li>
+            <li>ex: 1 !== 1 || 10 === 10 (true) </li>
+            &emsp;1 === 1 || 10 === 10 (true) <br>
+            &emsp;0 || undefined (false) <br>
+        </ul>
+        <h2>NOT</h2>
+        <ul>
+            <li>use ! to make any false statement true (vice versa) </li>
+            <li>ex: !null (true) </li>
+            &emsp;!(0 === 0) (false) <br>
+            &emsp;let firstName = prompt ("enter first name") <br>
+            &emsp;if (!firstName) { <br>
+                &emsp;&emsp;firstName = prompt("try again") <br>
+                &emsp;} <br>
+        </ul>
+        <h2>Switch Statement</h2>
+        <ul>
+            <li>another control-flow statement that can replace multiple If statements </li>
+            <li>ex: const day = 2 </li>
+            &emsp;switch (day) { <br>
+                &emsp;&emsp;case 1: <br>
+                &emsp;&emsp;&emsp;console.log('Monday'); <br>
+                &emsp;&emsp;&emsp;break; <br>
+                &emsp;&emsp;case 2: <br>
+                &emsp;&emsp;&emsp;console.log('Tuesday') <br>
+                &emsp;&emsp;&emsp;break; <br>
+                &emsp;&emsp;... <br>
+                &emsp;&emsp;case 5: <br>
+                &emsp;&emsp;case 6: <br>
+                &emsp;&emsp;case 7: <br>
+                &emsp;&emsp;&emsp;console.log('Weekend') <br>
+                &emsp;&emsp;&emsp;break; <br>
+                 } <br>
+            <li>things to note here are that you uses cases and order numerically </li>
+            <li>You want to add in "breaks" when you want the code to end there. Going back to the example, if I were to input 1 as the day const then the console would log Monday-Sunday rather than just Monday so by adding a "break" after Monday it would stop there. </li>
+        </ul>
+    </div>
+    
+    <div id="sectionSeventeen">
+        <h1>Section 17</h1>
+        <h2>Arrays</h2>
+        <ul>
+            <li>ordered collecton of values 
+                <ul>
+                    <li>list of comments</li>
+                    <li>collection of levels in a game</li>
+                    <li>songs in a playlist</li>
+                </ul>
+            </li>
+            <li>ex: let colors = ['red', 'white', 'blue'] </li>
+            &emsp;let numbers = [1, 2, 3] <br>
+            <li>note: need to use square brackets for the array </li>
+            <li>arrays are indexed, counting starts at zero 
+                <ul>
+                    <li>ex: (colors example) red has index of 0, white has index of 1, blue has index of 2</li>
+                    &emsp;colors[0] = 'red' 
+                </ul>
+            </li>
+        </ul>
+        <h3>Modifying Arrays</h3>
+        <ul>
+            <li>ex: let colors = ['rad', 'white', 'blue'] </li>
+            &emsp;colors[0] = 'red' <br>
+            &emsp;"red" <br>
+            <li>note: choose the index of the array you want to change </li>
+        </ul>
+        <h3>Array Methods</h3>
+        <ul>
+            <li>Methods are like actions that you can do with arrays </li>
+            <li>push: add to end of array (you can push more than one but order matters)
+                <ul>
+                    <li>ex: let numbers = [1, 2, 3]</li>
+                    &emsp;numbers.push(4)
+                    &emsp;numbers = [1, 2, 3, 4]
+                </ul>
+            </li>
+            <li>pop: remove from end of array
+                <ul>
+                    <li>ex: numbers.pop()</li>
+                    &emsp;numbers = [1, 2, 3]
+                </ul>
+            </li>
+            <li>shift: remove from start
+                <ul>
+                    <li>ex: numbers.shift()</li>
+                    &emsp;numbers = [2, 3]
+                </ul>
+            </li>
+            <li>unshift: add to start
+                <ul>
+                    <li>ex: numbers.unshift(1)</li>
+                    &emsp;numbers = [1, 2, 3]
+                </ul>
+            </li>
+            <li>other common methods:
+                <ul>
+                    <li>concat: merge arrays</li>
+                    <li>includes: look for a value</li>
+                    <li>indexOf: just like string.indexOf</li>
+                    <li>join: creates a string from an array</li>
+                    <li>reverse: reverses an array</li>
+                    <li>slice: copies a portino on an array</li>
+                    <li>splice: removes/replaces elements</li>
+                    <li>sort: sorts an array</li>
+                </ul>
+            </li>
+            <li>link to list of methods (listed on left side) --> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Here</a> </li>
+        </ul>
+    </div>
+
 
 </body>
 
