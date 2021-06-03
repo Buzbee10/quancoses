@@ -1530,7 +1530,9 @@
 
         <h2>Functions With More Than One Argument</h2>
 
-        <div>We can add more parameters by including a comma (multiple commas). Keep in mind, that the first argument that we pass in will be assigned to the first parameter, the second arguemnt to the second parameter, etc.</div> <br>
+        <div>We can add more parameters by including a comma (multiple commas). Keep in mind, that the first argument
+            that we pass in will be assigned to the first parameter, the second arguemnt to the second parameter, etc.
+        </div> <br>
 
         <div>function funcName (parameter, parameter, .....) { <br>
             &emsp; //do something <br>
@@ -1540,12 +1542,45 @@
         <h2>The Return Keyword</h2>
         <div>When we use the return keyword, it will export out of the function.</div><br>
         <div>The return keyword will also stop the execution of the function.</div> <br>
-        <div>When we return something, we can only return a single value. The value could be an aray or an object with multiple things inside of it, but we can only return 1 thing.</div>
+        <div>When we return something, we can only return a single value. The value could be an aray or an object with
+            multiple things inside of it, but we can only return 1 thing.</div>
 
 
 
 
     </div>
+
+    <div id="sectionTwenty-one"></div>
+    <h1>Section 21</h1>
+    <h2>Scope- variable visibility. The location where a variable is defined dictates where we have access to that
+        variable.</h2>
+    <h3>Function Scope</h3>
+    <ul>
+        <li> Variables defined inside of a function can only be used within that function.</li>
+    </ul>
+    <img src="../media/functionScopeExample.png" alt="scopeExample">
+
+    <ul>
+        <li>If there is a varibale defined inside of a function with the same name as a varibale named outside of the
+            function, this is okay. Since a function is its own little bubble, they don't have a conflict. If we call
+            the variable from within the function, the variable within the function takes precedence.</li>
+    </ul>
+
+    <h3>Block Scope</h3>
+
+    <ul>
+        <li>Variables defined within a block (loops, conditionals) are scoped to that block.</li>
+    </ul> 
+    <img src="../media/blockScopeExample.png" alt="blockScopeExample">
+
+    <h3>Lexical Scope</h3>
+    <ul>
+        <li>A function nested inside of another function has access to the variables defined in the parent function. But not the other way around.</li>
+        <li>In the example below, the inner function has access to the variable 'hero', which is defined in the outer function.</li>
+    </ul>
+    <img src="../media/lexicalScopeExample.png" alt="lexicalScopeExample">
+
+
 
 </body>
 
