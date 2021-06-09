@@ -1570,15 +1570,68 @@
 
     <ul>
         <li>Variables defined within a block (loops, conditionals) are scoped to that block.</li>
-    </ul> 
+    </ul>
     <img src="../media/blockScopeExample.png" alt="blockScopeExample">
 
     <h3>Lexical Scope</h3>
     <ul>
-        <li>A function nested inside of another function has access to the variables defined in the parent function. But not the other way around.</li>
-        <li>In the example below, the inner function has access to the variable 'hero', which is defined in the outer function.</li>
+        <li>A function nested inside of another function has access to the variables defined in the parent function. But
+            not the other way around.</li>
+        <li>In the example below, the inner function has access to the variable 'hero', which is defined in the outer
+            function.</li>
     </ul>
     <img src="../media/lexicalScopeExample.png" alt="lexicalScopeExample">
+
+    <h3>Function Expressions</h3>
+    <ul>
+        <li>These are functions that are stored in a variable. These functions do not have a 'name'. The 'name' goes to
+            the varibale, so when we want to call a function expression, we call the varibale name. </li>
+        <li>See example below. This is a const varibale with the variable name of square. This varibale holds a function
+            that returns the square of some input. So, if we want to call this function, we do so by calling the
+            variable name 'square'.</li>
+        <li>This is an important distinction because it shows how JS sees a function. It see it as just some value. This
+            is nice because we can now use the function expression as an arguemnt for something else.</li>
+    </ul>
+
+    <img src="../media/functionExpressionExample.png" alt="functionExpressionExample">
+
+    <h3>Higher Order Functions: functions that operate on/with other functions.</h3>
+    <ul> They can:
+        <li>Accept other functions as an arguemnt</li>
+        <li>Return a function</li>
+    </ul>
+    <h3>Methods: a function that has been added as a property to some ojbect.</h3>
+    <ul>
+        <li>We can access the methods with syntax we have seen before. ex. objectName.methodName();</li>
+        <li>Example below:</li>
+    </ul>
+    <img src="../media/methodExample.png" alt="methodExample">
+    <ul>
+        <li>There is also a shorthand way of writing methods. To compare with before, look at the 'multiply' method on
+            both. See below:</li>
+    </ul>
+    <img src="../media/methodShorthandExample.png" alt="methodShorthandExample">
+
+    <h3>'This' Keyword</h3>
+    <div>Just watch his <a
+            href="https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/22003506#search">video</a> on
+        it. It will be easier to explain through example.</div>
+
+    <h3>Try/Catch</h3>
+    <ul>
+        <li>This is a nice way to preemptively catch an error if you think something might 'break' your code. So, we use
+            'try' and 'catch' to try out some code while still allowing the code to work, even if there is an error. The
+            way
+            we do this is by wrapping the possibly faulty code in a try block, then following up with a catch block. If
+            the
+            code inside of the try block results in an error, the catch block will execute then continue on with the
+            rest of
+            the code. Example below:</li>
+        <li>We can also have 'catch' catch the specific error by putting 'e' in parenthesis immediately after the
+            catch. This is shown in the example below: </li>
+
+    </ul>
+    <img src="../media/tryCatchExample.png" alt="tryCatchExample">
 
 
 
